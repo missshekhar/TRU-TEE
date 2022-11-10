@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tru&Tee</title>
+
+    <meta name="description" content="Tru&Tee - educational game of trust">
+    <meta name="author" content="Dhriti Shekhar">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./game.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <section class="welcome" id="1">
+            <div class="section-container">
+                <h1>Welcome</h1>
+                <div class="character-container">
+                    <div class="character">
+                        <h2>Tru</h2>
+                        <img class="character-img" src="./img/player.png" width="150" />
+                    </div>
+                    <div class="character-container-text">
+                        <p>TRU and TEE are two cute components of life, Trust and Trustee. Try winning the games against
+                            few "tees".</p>
+                        <p>Press start to join the journey of cooperation and cheating till the conclusion.</p>
+                        <p>It's all very cute, thanks to only HTML/CSS and JS.</p>
+                        <button class="btn-continue">
+                            <a href="#2">
+                                Let's start
+                            </a>
+                        </button>
+                    </div>
+
+                    <div class="character">
+                        <h2>Tee</h2>
+                        <img class="character-img character-right" src="./img/detective.png" width="150" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="rules" id="2">
+            <div class="section-container">
+                <h1>Rules</h1>
+                <div class="rules-container">
+                    <ul class="rules-text">
+                        <li>There will be different characters interaction with the user where you can cooperate or
+                            cheat.</li>
+                        <li>For each character there will be certain amount of interactions.</li>
+                        <li>Decisions made by User and PC can't be undone.</li>
+                        <li>Both cooperate, will give 2 pts each.</li>
+                        <li>If one cheats, it would lead to 3 pts and the one got betrayed will get -1.</li>
+                        <li>Play and analyze against whom you could stand the best.</li>
+                    </ul>
+
+
+                    <button class="btn-continue">
+                        <a href="#3">Continue</a>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <section class="tutorial" id="3">
+            <div class="section-container">
+                <h1>Game</h1>
+                <div class="character-container">
+                    <div class="character">
+                        <p class="action">action</p>
+                        <h2>Tru</h2>
+                        <div class="result player">
+                            0
+                        </div>
+                        <div class="character-img-wrapper">
+                            <img class="character-img" src="./img/player.png" width="150" />
+                        </div>
+
+                    </div>
+                    <div class="game-wrapper">
+                        <h2 class="match-result">Result</h2>
+                        <div class="game-console">
+                            <div class="game-console-choice">
+                                <span class="value">+2</span>
+                                <span class="value-divider">|</span>
+                                <span class="value">+2</span>
+                            </div>
+                            <div class="game-console-choice-wrapper">
+                                <div class="game-console-choice"><span class="value">+3</span> <span
+                                        class="value-divider">|</span> <span class="value">-1</span></div>
+                                <div class="game-console-choice"><span class="value">-1</span> <span
+                                        class="value-divider">|</span> <span class="value">+3</span></div>
+                            </div>
+                            <div class="game-console-choice"><span class="value">0</span> <span
+                                    class="value-divider">|</span> <span class="value">0</span></div>
+                        </div>
+                        <div class="game-buttons-container">
+                            <button class="game-choice-btn">Cooperate</button>
+                            <button class="game-choice-btn">Cheat</button>
+                        </div>
+
+                    </div>
+
+                    <div class="character">
+
+                        <div class="character-cointainer">
+                            <p class="action">action</p>
+                            <h2>Tee</h2>
+                            <div class="result pc">
+                                0
+                            </div>
+                            <div class="character-img-wrapper">
+                                <img class="character-img character-right pc-character" src="./img/detective.png"
+                                    width="150" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="result-section" id="4">
+            <div class="section-container">
+                <h1 class="result-details">You scored <span class="total-score">total</span>Maximum is 44 points, where
+                    minimum is 15 points. Are you happy with your result?</h1>
+                <button class="btn-continue">
+                    <a href="#5">Continue</a>
+                </button>
+            </div>
+        </section>
+
+        <section class="characters" id="5">
+            <div class="section-container">
+                <h1>Characters You have met</h1>
+
+                <div class="characters-intro">
+
+                    <div class="characters-intro-column">
+                        <div class="character-intro-container">
+                            <img src="./img/detective.png" width="70" />
+                            <div class="character-intro-text">
+                                <h2>Detective <span class="match-score-player">0</span>:<span
+                                        class="match-score-pc">0</span> </h2>
+                                <p>Starts with cooperate, cheat,then cooperate and cooperate. If cheated back, will act
+                                    like Copycat. If you never cheat back, will act like Cheater</p>
+                            </div>
+                        </div>
+
+
+                        <div class="character-intro-container">
+                            <img src="./img/cheater.png" width="70" />
+                            <div class="character-intro-text">
+                                <h2>Cheater <span class="match-score-player">0</span>:<span
+                                        class="match-score-pc">0</span> </h2>
+                                <p>Always cheating.</p>
+                            </div>
+                        </div>
+                        <div class="character-intro-container">
+                            <img src="./img/player.png" width="70" />
+                            <div class="character-intro-text">
+                                <h2>Copycat <span class="match-score-player">0</span>:<span
+                                        class="match-score-pc">0</span> </h2>
+                                <p>Starts with cooperate, and then copy every past turn.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="characters-intro-column">
+                        <div class="character-intro-container">
+                            <img src="./img/cooperator.png" width="70" />
+                            <div class="character-intro-text">
+                                <h2>Cooperator <span class="match-score-player">0</span>:<span
+                                        class="match-score-pc">0</span> </h2>
+                                <p>Always cooperating.</p>
+                            </div>
+                        </div>
+                        <div class="character-intro-container">
+                            <img src="./img/grudger.png" width="70" />
+                            <div class="character-intro-text">
+                                <h2>Grudger <span class="match-score-player">0</span>:<span
+                                        class="match-score-pc">0</span> </h2>
+                                <p>Starts with cooperate and keep cooperating untill getting cheated. If ever got
+                                    cheated, will cheat back till the end.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-continue">
+                    <a href="#6">Continue</a>
+                </button>
+            </div>
+        </section>
+        <section class="explanation" id="6">
+            <div class="section-container">
+                <h1>The best strategy?</h1>
+                <div class="explanation-text">
+                    <p>
+                        On a bigger scale, Copycat's strategy is the most profitable. It is able to gain the profit with
+                        cooperation and defend well thanks to copying mechanism.
+                    </p>
+                    <p>Thanks to this, in 1914, Germans and Englishmen were able to establish Christmas Truce. We can
+                        call this rule: "I am not shooting, You are not shooting".</p>
+                    <img src="./img/player.png" width="125" />
+                </div>
+                <button class="btn-continue">
+                    <a href="#7">Conclusion</a>
+                </button>
+            </div>
+        </section>
+        <section class="conclusion" id="7">
+            <div class="section-container">
+                <h1>Conclusion</h1>
+                <div class="conclusion-text">
+                    <p>The idea of understanding the patterns in one's action can determine how the Trust would evolve.
+                    </p>
+                    <p>
+                        People not only lose or break trust but more importantly they choose the option to resist the
+                        birth of it.
+                    </p>
+                    <p>
+                        Hence,
+                        the game doesn't you but instead you define the game.
+                    </p>
+
+                </div>
+                <div class="conclusion-characters">
+                    <img src="./img/cheater.png" width="100" />
+                    <img src="./img/player.png" width="100" />
+                    <img src="./img/detective.png" width="100" />
+                    <img src="./img/grudger.png" width="100" />
+                    <img src="./img/cooperator.png" width="100" />
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
